@@ -1,0 +1,259 @@
+.header {
+  height: 55px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: rgb(204, 204, 204);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  z-index: 10;
+}
+
+.left-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.middle-section {
+  flex: 1;
+  margin-left: 65px;
+  margin-right: 35px;
+  max-width: 500px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.right-section {
+  width: 180px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-shrink: 0;
+}
+
+.searchbar {
+  height: 35px;
+  flex: 1;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(204, 204, 204);
+  font-size: 16px;
+  padding-left: 12px;
+  box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05);
+  width: 0;
+}
+
+.searchbar::placeholder {
+  font-family: Roboto, Arial;
+  font-size: 16px;
+}
+
+.menu-icon {
+  height: 24px;
+  margin-left: 24px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.yt-logo {
+  height: 20px;
+  cursor: pointer;
+}
+
+.search-button {
+  height: 39px;
+  width: 66px;
+  border-width: 1px;
+  border-style: solid;
+  border-left: none;
+  border-color: rgb(204, 204, 204);
+  background-color: rgb(244, 244, 244);
+  margin-left: -1px;
+  margin-right: 8px;
+  cursor: pointer;
+  position: relative;
+}
+
+.search-button:hover .tooltip {
+  opacity: 0.9;
+}
+
+.voice-search-button {
+  height: 38px;
+  width: 38px;
+  border-radius: 19px;
+  border: none;
+  margin-left: 9px;
+  background-color: rgb(244, 244, 244);
+  padding-top: 5px;
+  cursor: pointer;
+  position: relative;
+}
+
+.voice-search-button:hover .tooltip {
+  opacity: 0.9;
+  left: -25px;
+}
+
+.create-div,
+.yt-apps-div {
+  position: relative;
+}
+
+.create-div:hover .tooltip {
+  opacity: 0.9;
+  left: -10px;
+}
+.yt-apps-div:hover .tooltip {
+  opacity: 0.9;
+  left: -30px;
+}
+
+.searchimg {
+  width: 40px;
+  height: 24px;
+  margin-top: 4px;
+  align-self: center;
+}
+
+.voice-img {
+  align-self: center;
+}
+
+.uploadimg {
+  height: 24px;
+  cursor: pointer;
+}
+
+.youtubeappsimg {
+  height: 24px;
+  cursor: pointer;
+}
+
+.notifimg {
+  height: 24px;
+}
+
+.notifications-div {
+  position: relative;
+  cursor: pointer;
+}
+
+.notifications-div:hover .tooltip {
+  opacity: 0.9;
+  left: -25px;
+}
+
+.notifications-count {
+  position: absolute;
+  top: -2px;
+  right: -5px;
+  background-color: rgb(200, 0, 0);
+  color: white;
+  font-family: Roboto, Arial;
+  border-radius: 50%;
+  font-size: 11px;
+  padding-right: 5px;
+  padding-left: 5px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(74, 0, 0);
+}
+
+.mychannelimg {
+  height: 32px;
+  border-radius: 16px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.tooltip {
+  position: absolute;
+  background-color: rgb(109, 109, 109);
+  color: white;
+  padding: 6px;
+  border-radius: 3px;
+  font-size: 13px;
+  font-family: Roboto, Arial;
+  bottom: -45px;
+  opacity: 0;
+  transition: opacity 0.15s;
+  pointer-events: none;
+  align-self: center;
+  white-space: nowrap;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: top;
+  align-items: center;
+  align-content: center;
+  border-right-style: solid;
+  border-right-width: 1px;
+  border-right-color: rgb(204, 204, 204);
+  position: fixed;
+  top: 55px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: white;
+  width: 70px;
+  padding-top: 10px;
+  padding-right: 6px;
+}
+
+.sidebar-button {
+  height: 80px;
+  width: 65px;
+  background-color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.sidebar-button:hover {
+  background-color: rgb(240, 240, 240);
+}
+
+.home-icon {
+  height: 25px;
+}
+
+.explore-icon {
+  height: 25px;
+}
+
+.subscriptions {
+  height: 25px;
+}
+
+.originals-icon {
+  height: 25px;
+}
+
+.youtube-music {
+  height: 25px;
+}
+
+.library-icon {
+  height: 25px;
+}
+
+.hp {
+  color: black;
+  font-size: 10px;
+  font-family: Roboto, Arial;
+  margin: 0;
+}
